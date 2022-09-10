@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031B0BF51A33DED156D1ABD5 /* Pods_NotesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9C52A19A0618F5BD686E9D /* Pods_NotesApp.framework */; };
 		7D5B484528CD2BDB00A1E411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B484428CD2BDB00A1E411 /* AppDelegate.swift */; };
 		7D5B484728CD2BDB00A1E411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B484628CD2BDB00A1E411 /* SceneDelegate.swift */; };
 		7D5B484928CD2BDB00A1E411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B484828CD2BDB00A1E411 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05D4443FC6FD3E146F2438AF /* Pods-NotesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesApp.release.xcconfig"; path = "Target Support Files/Pods-NotesApp/Pods-NotesApp.release.xcconfig"; sourceTree = "<group>"; };
+		5D9C52A19A0618F5BD686E9D /* Pods_NotesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5B484128CD2BDB00A1E411 /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5B484428CD2BDB00A1E411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D5B484628CD2BDB00A1E411 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		7D5B484D28CD2BDE00A1E411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D5B485028CD2BDE00A1E411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D5B485228CD2BDE00A1E411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F6FB5F71D8BBF1F63B90B6 /* Pods-NotesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesApp.debug.xcconfig"; path = "Target Support Files/Pods-NotesApp/Pods-NotesApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031B0BF51A33DED156D1ABD5 /* Pods_NotesApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343317641B6AC7FC52C08462 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9F6FB5F71D8BBF1F63B90B6 /* Pods-NotesApp.debug.xcconfig */,
+				05D4443FC6FD3E146F2438AF /* Pods-NotesApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D5B483828CD2BDB00A1E411 = {
 			isa = PBXGroup;
 			children = (
 				7D5B484328CD2BDB00A1E411 /* NotesApp */,
 				7D5B484228CD2BDB00A1E411 /* Products */,
+				343317641B6AC7FC52C08462 /* Pods */,
+				F604A9F517A0F093FA966A2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = NotesApp;
 			sourceTree = "<group>";
 		};
+		F604A9F517A0F093FA966A2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D9C52A19A0618F5BD686E9D /* Pods_NotesApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D5B485528CD2BDE00A1E411 /* Build configuration list for PBXNativeTarget "NotesApp" */;
 			buildPhases = (
+				C358E0B21A8B2355ABCFBAC3 /* [CP] Check Pods Manifest.lock */,
 				7D5B483D28CD2BDB00A1E411 /* Sources */,
 				7D5B483E28CD2BDB00A1E411 /* Frameworks */,
 				7D5B483F28CD2BDB00A1E411 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C358E0B21A8B2355ABCFBAC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D5B483D28CD2BDB00A1E411 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		7D5B485628CD2BDE00A1E411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F6FB5F71D8BBF1F63B90B6 /* Pods-NotesApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +362,7 @@
 		};
 		7D5B485728CD2BDE00A1E411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D4443FC6FD3E146F2438AF /* Pods-NotesApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
