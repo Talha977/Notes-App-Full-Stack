@@ -9,9 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    //https://www.youtube.com/watch?v=vKCdVAg5h40
+        override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
