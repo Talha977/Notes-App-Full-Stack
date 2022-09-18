@@ -6,5 +6,6 @@ target 'NotesApp' do
   use_frameworks!
 
   # Pods for NotesApp
-
+  pod 'Alamofire'
+  pod 'IQKeyboardManager'
 end

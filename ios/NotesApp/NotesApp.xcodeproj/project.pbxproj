@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		031B0BF51A33DED156D1ABD5 /* Pods_NotesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9C52A19A0618F5BD686E9D /* Pods_NotesApp.framework */; };
+		7D4CCD8328D66598003F7920 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4CCD8228D66598003F7920 /* NetworkManager.swift */; };
+		7D4CCD8528D6F05B003F7920 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4CCD8428D6F05B003F7920 /* Constants.swift */; };
+		7D4CCD8728D701BB003F7920 /* NoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4CCD8628D701BB003F7920 /* NoteDetailsViewController.swift */; };
+		7D4CCD8928D70573003F7920 /* NotePrototypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4CCD8828D70573003F7920 /* NotePrototypeCell.swift */; };
 		7D5B484528CD2BDB00A1E411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B484428CD2BDB00A1E411 /* AppDelegate.swift */; };
 		7D5B484728CD2BDB00A1E411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B484628CD2BDB00A1E411 /* SceneDelegate.swift */; };
 		7D5B484928CD2BDB00A1E411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5B484828CD2BDB00A1E411 /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 /* Begin PBXFileReference section */
 		05D4443FC6FD3E146F2438AF /* Pods-NotesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesApp.release.xcconfig"; path = "Target Support Files/Pods-NotesApp/Pods-NotesApp.release.xcconfig"; sourceTree = "<group>"; };
 		5D9C52A19A0618F5BD686E9D /* Pods_NotesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4CCD8228D66598003F7920 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7D4CCD8428D6F05B003F7920 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7D4CCD8628D701BB003F7920 /* NoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewController.swift; sourceTree = "<group>"; };
+		7D4CCD8828D70573003F7920 /* NotePrototypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePrototypeCell.swift; sourceTree = "<group>"; };
 		7D5B484128CD2BDB00A1E411 /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5B484428CD2BDB00A1E411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D5B484628CD2BDB00A1E411 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +56,6 @@
 				D9F6FB5F71D8BBF1F63B90B6 /* Pods-NotesApp.debug.xcconfig */,
 				05D4443FC6FD3E146F2438AF /* Pods-NotesApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,10 @@
 				7D5B484428CD2BDB00A1E411 /* AppDelegate.swift */,
 				7D5B484628CD2BDB00A1E411 /* SceneDelegate.swift */,
 				7D5B484828CD2BDB00A1E411 /* ViewController.swift */,
+				7D4CCD8628D701BB003F7920 /* NoteDetailsViewController.swift */,
+				7D4CCD8828D70573003F7920 /* NotePrototypeCell.swift */,
+				7D4CCD8428D6F05B003F7920 /* Constants.swift */,
+				7D4CCD8228D66598003F7920 /* NetworkManager.swift */,
 				7D5B484A28CD2BDB00A1E411 /* Main.storyboard */,
 				7D5B484D28CD2BDE00A1E411 /* Assets.xcassets */,
 				7D5B484F28CD2BDE00A1E411 /* LaunchScreen.storyboard */,
@@ -103,6 +114,7 @@
 				7D5B483D28CD2BDB00A1E411 /* Sources */,
 				7D5B483E28CD2BDB00A1E411 /* Frameworks */,
 				7D5B483F28CD2BDB00A1E411 /* Resources */,
+				B1C18C5630BA28973A94469F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +172,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B1C18C5630BA28973A94469F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C358E0B21A8B2355ABCFBAC3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,9 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4CCD8528D6F05B003F7920 /* Constants.swift in Sources */,
+				7D4CCD8328D66598003F7920 /* NetworkManager.swift in Sources */,
 				7D5B484928CD2BDB00A1E411 /* ViewController.swift in Sources */,
+				7D4CCD8928D70573003F7920 /* NotePrototypeCell.swift in Sources */,
 				7D5B484528CD2BDB00A1E411 /* AppDelegate.swift in Sources */,
 				7D5B484728CD2BDB00A1E411 /* SceneDelegate.swift in Sources */,
+				7D4CCD8728D701BB003F7920 /* NoteDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -67,7 +67,7 @@ res.send(DBItems)
 })
 })
 
-var server = app.listen(8081,"192.168.1.101",()=>{
+var server = app.listen(8081,"192.168.1.103",()=>{
     console.log("Server is running")
 }) .on("error",(error) => { 
     console.log("Failed to connect with error " + error)
